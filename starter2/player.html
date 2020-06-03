@@ -1,0 +1,47 @@
+<html>
+<header>
+   <title>Music Player</title>
+   <link rel="stylesheet" type="text/css" href="ipod.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
+</header>
+<body>
+   <div id="screen">
+     <div class="head-bar">
+      <a href=songs.html> 
+         <img alt="Songs Select" src="back button 2.png" class="back-button"></img> 
+     </a>
+   </div>
+   <img src="images/cbook.jpg" alt="Coloring Book Album Cover" class="player-album-art"/>
+   <div>
+      <p id="player-song-name">All We Got</p>
+      <p class="player-song-info"><em>Coloring Book</em> - Chance the Rapper</p>
+   </div>
+   <input type="range" value=0 min=0 max=180 id="player-time">
+   <div id="time-elapsed">0:00</div>
+   <div id="time-total">3:00</div>
+   <div class="player-controls">
+      <button onclick="prevSong()"><i class="material-icons">skip_previous</i></button>
+      <button onclick="switchPlay()" id="play_pause"><i class="material-icons">play_arrow</i></button>
+      <button onclick="nextSong()"><i class="material-icons">skip_next</i></button>
+   </div>
+   <div class="volume-level">
+      <div id="vol_icon"><i class="material-icons">volume_down</i></div>
+      <div id="vl0"></div>
+      <div id="vl1"></div>
+      <div id="vl2"></div>
+      <div id="vl3"></div>
+      <div id="vl4"></div>
+      <div id="vl5"></div>
+   </div>
+   <button class="volume-rocker" onclick="volDown()">&mdash;</button>
+   <button class="volume-rocker" onclick="volUp()">+</button>
+   
+</div>
+<script src="ipod.js"></script>
+</body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
